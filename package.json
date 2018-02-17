@@ -1,0 +1,24 @@
+{
+  "name": "tcs-hr-chatbot",
+  "version": "1.0.0",
+  "description": "Gets you handy information for HR recruitment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "TCS",
+    "HR",
+    "chatbot",
+    "helper"
+  ],
+  "author": "pohyk123",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.14.0",
+    "git": "^0.1.5",
+    "nodemon": "^1.15.0",
+    "restify": "^6.3.4"
+  }
+}
