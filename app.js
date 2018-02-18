@@ -9,8 +9,9 @@ server.listen(process.env.port || process.env.PORT || 3978, function () {
 
 // Create chat connector for communicating with the Bot Framework Service
 var connector = new builder.ChatConnector({
-    appId: process.env.MicrosoftAppId,
-    appPassword: process.env.MicrosoftAppPassword
+    appId: '74d4fc7b-a7fa-4da7-aa63-a466f25d530e',
+    appPassword: 'w*Rd8vm6Z7caEVc5'
+
 });
 
 // Listen for messages from users
@@ -18,5 +19,5 @@ server.post('/api/messages', connector.listen());
 
 // Receive messages from the user and respond by echoing each message back (prefixed with 'You said:')
 var bot = new builder.UniversalBot(connector, function (session) {
-    session.send("You said... %s", session.message.text);
+    session.send("You said: %s", session.message.text);
 });
